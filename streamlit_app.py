@@ -9,7 +9,7 @@ model = joblib.load('random_forest_model.pkl')
 # Colunas a serem dropadas
 drop_columns = ['ULTICONS', 'ULTIDIAG', 'ULTITRAT', 'obito_geral', 'vivo_ano1', 'vivo_ano3', 'ULTINFO', 'obito_cancer', 'ESCOLARI']
 
-st.title('❤ Machine Learning Teste')
+st.title('❤ Machine Learning Teste😊')
 
 st.write('Teste de app para machine learning surviv')
 df = pd.read_csv('https://raw.githubusercontent.com/acanellafilho/ia/refs/heads/main/Trabalho%20IA%20Parte%202/data_preProcess2.csv')
