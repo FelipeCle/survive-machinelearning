@@ -13,8 +13,8 @@ with st.sidebar:
   escolari = st.selectbox('Escolaridade',('1','2','3','4','5'))
   idade = st.slider('Idade(anos)', 0, 99, 46, step=1)
   #Criar df com base no input
-  data = {'escolari': ESCOLARI,
-          'idade': IDADE
+  data = {'ESCOLARI': escolari,
+          'IDADE': idade
           }
   input_df = pd.DataFrame(data, index=[0])
   input_df
