@@ -10,4 +10,4 @@ df
 with st.sidebar:
   st.header('Input features')
   # ESCOLARI,IDADE
-  escolari = set.selectbox('Escolaridade',('1','2','3','4','5'))
+  escolari = st.selectbox('Escolaridade',('1','2','3','4','5'))
