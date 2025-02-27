@@ -6,12 +6,6 @@ import numpy as np
 # Carregando Modelo Teste
 model = joblib.load('random_forest_model.pkl')
 
-# Lista de colunas que o modelo espera (excluindo as que serão dropadas)
-all_columns = ['ESCOLARI', 'IDADE', 'IBGE', 'CATEATEND', 'DIAGPREV', 'BASEDIAG', 'EC', 'G', 'PSA', 'GLEASON', 
-               'TRATHOSP', 'NENHUM', 'CIRURGIA', 'RADIO', 'QUIMIO', 'HORMONIO', 'TMO', 'IMUNO', 'OUTROS', 
-               'NENHUMANT', 'CONSDIAG', 'TRATCONS', 'DIAGTRAT', 'ANODIAG', 'DRS', 'RRAS', 'RECNENHUM', 
-               'IBGEATEN', 'vivo_ano5']
-
 # Colunas a serem dropadas
 drop_columns = ['ULTICONS', 'ULTIDIAG', 'ULTITRAT', 'obito_geral', 'vivo_ano1', 'vivo_ano3', 'ULTINFO', 'obito_cancer', 'ESCOLARI']
 
@@ -87,18 +81,6 @@ with st.sidebar:
 
     input_df = pd.DataFrame(data)
     
-    # Completar input_df com colunas faltantes, exceto as dropadas
-    for col in all_columns:
-        if col not in input_df.columns:
-            input_df[col] = 0  # Valor default (ou um valor apropriado) para as colunas faltantes
-
-    # Remover colunas não necessárias
-    input_df = input_df.drop(columns=drop_columns)
-    st.write("Input DataFrame", input_df)
-
-    # Ordenar colunas na ordem correta
-    input_df = input_df[[col for col in all_columns if col not in drop_columns]]
-
     # Fazer a predição
     if st.button('Predict'):
         prediction = model.predict(input_df)
