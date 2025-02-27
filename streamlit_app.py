@@ -11,4 +11,4 @@ with st.sidebar:
   st.header('Input features')
   # ESCOLARI,IDADE
   escolari = st.selectbox('Escolaridade',('1','2','3','4','5'))
-  idade = st.slider('Idade(anos)', 0.0, 99.0, 46.0)
+  idade = st.slider('Idade(anos)', 0, 99, 46, step=1)
