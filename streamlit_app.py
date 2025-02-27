@@ -87,17 +87,3 @@ with st.sidebar:
         st.write(f"Estimated `vivo_ano5`: {prediction[0]}")
 
 
-    # Se o seu modelo for 'model' e seus dados forem 'X'
-    expected_features = model.feature_names_in_
-    actual_features = X.columns
-        
-    print("Expected features:", expected_features)
-    print("Actual features:", actual_features)
-        
-    # Encontre a diferença
-    missing_features = set(expected_features) - set(actual_features)
-    extra_features = set(actual_features) - set(expected_features)
-        
-    print("Missing features in X:", missing_features)
-    print("Extra features in X:", extra_features)
-
