@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 # Carregando Modelo Teste
-model = joblib.load('modelos/random_forest_model.pkl')
+model = joblib.load('random_forest_model.pkl')
 
 # Lista de colunas que o modelo espera (excluindo as que serão dropadas)
 all_columns = ['ESCOLARI', 'IDADE', 'IBGE', 'CATEATEND', 'DIAGPREV', 'BASEDIAG', 'EC', 'G', 'PSA', 'GLEASON', 
