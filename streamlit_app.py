@@ -25,7 +25,7 @@ with st.sidebar:
     cateatend = st.text_input('Categoria de Atendimento')
     diagprev = st.text_input('Diagnóstico Prevalente')
     basediag = st.text_input('Base do Diagnóstico')
-    ec = st.selectbox('Estadio Clinico', ('I', 'II', 'III', 'IV', 'V'))
+    ec = st.selectbox('Estadio Clinico', ('1', '2', '3', '4', '5'))
     g = st.text_input('G')
     psa = st.text_input('PSA')
     gleason = st.text_input('Gleason')
