@@ -19,7 +19,6 @@ with st.sidebar:
     st.header('Input features')
     
     # Inputs para todas as colunas relevantes
-    escolari = st.selectbox('Escolaridade', ('1', '2', '3', '4', '5'))
     idade = st.slider('Idade(anos)', 0, 99, 46, step=1)
     ibge = st.text_input('IBGE')
     cateatend = st.text_input('Categoria de Atendimento')
@@ -49,7 +48,7 @@ with st.sidebar:
     ibgeaten = st.text_input('IBGE Atendimento')
 
     # Criar um DataFrame com base nos dados de entrada
-    data = {'ESCOLARI': [escolari],
+    data = {
             'IDADE': [idade],
             'IBGE': [ibge],
             'CATEATEND': [cateatend],
