@@ -11,7 +11,7 @@ drop_columns = ['ULTICONS', 'ULTIDIAG', 'ULTITRAT', 'obito_geral', 'vivo_ano1', 
 
 st.title('❤ Machine Learning Teste')
 
-st.write('Hello world!')
+st.write('Teste de app para machine learning surviv')
 df = pd.read_csv('https://raw.githubusercontent.com/acanellafilho/ia/refs/heads/main/Trabalho%20IA%20Parte%202/data_preProcess2.csv')
 st.write(df)
 
