@@ -1,25 +1,7 @@
-# 📦 Streamlit App Starter Kit 
+# 📦 Deploy de modelo de Machine Learning com Streamlit
 ```
-⬆️ (Replace above with your app's name)
+⬆️ Predição de sobrevivência de pacientes com câncer
 ```
 
-Description of the app ...
+Utilizando uma base de dados pública da Fosp, e treinando modelos para prever sobrevivência em diferentes faixas etárias.
 
-## Demo App
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
-
-## GitHub Codespaces
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
-
-## Section Heading
-
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
